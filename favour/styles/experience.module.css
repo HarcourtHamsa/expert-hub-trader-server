@@ -1,0 +1,67 @@
+#experience {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#experience [class=container] {
+  max-width: 80vw;
+  margin: auto;
+  width: 100%;
+}
+
+#experience [class=container] h2 {
+  font-size: 4rem;
+  margin-bottom: -3%;
+}
+
+#experience [class=container] [class=sub] {
+  width: 500px;
+  color: gray;
+}
+
+#experience [class=container] [class=grid] {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+#experience [class=container] [class=grid] div:nth-child(1) section {
+  border-top: 2px solid whitesmoke;
+}
+
+#experience [class=container] [class=grid] div:nth-child(1) section h3 {
+  margin-bottom: -2%;
+  font-weight: lighter;
+  font-family: "L";
+}
+
+#experience [class=container] [class=grid] div:nth-child(1) section p {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  #experience [class=container] h2 {
+    font-size: 3.4rem;
+    line-height: 1;
+    margin-bottom: initial;
+  }
+  #experience [class=container] [class=sub] {
+    width: 100%;
+    color: gray;
+  }
+  #experience [class=container] [class=grid] {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=experience.module.css.map */

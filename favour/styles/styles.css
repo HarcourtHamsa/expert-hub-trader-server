@@ -1,0 +1,55 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+    background: linear-gradient(180deg, rgba(255, 239, 186, .3), rgba(228, 255, 250, .4) 56.77%, #fdfff5);
+
+    background-image: repeating-linear-gradient(0deg, #f8f7f7, #f8f7f7 1px, transparent 1px, transparent);
+    background-attachment: fixed;
+    background-size: 1px 101px;
+    /* background-color: #f5f5f5; */
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "L";
+    src: url('../assets/fonts/l.otf');
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Graphik";
+    src: url('../assets/fonts/GraphikRegular.otf');
+    font-display: swap;
+}
+
+* {
+    font-family: "Graphik";
+}
+
+h1,
+h2 {
+    font-family: "L";
+}
+
+no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
