@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/navigation.module.css">
     <link rel="stylesheet" href="./styles/main.modules.css">
     <link rel="stylesheet" href="./styles/footer.module.css">
+    <link rel="stylesheet" href="./styles/loader.module.css">
     <title>Favour Princewill Portfolio</title>
 
 </head>
@@ -44,8 +45,8 @@
                         User Interface Designer
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eos id aliquid expedita
-                        eligendi odio laboriosam necessitatibus ipsam recusandae dolorum!
+                        Incredible creative and multi-talented digital graphic designer with
+                        extensive experience in UI/UX, web design and product management
                     </p>
 
                     <button>Hire me</button>
@@ -162,8 +163,22 @@
 
     <!-- loader -->
     <div class="se-pre-con">
+        <div>
+            <h1>Favour Princewill</h1>
+            <span>
+                <p>Digital Normad</p>
+                <p>100%</p>
+            </span>
+        </div>
     </div>
 
+    <div id="swing">
+        <img src="./assets/images/swing2.svg" alt="" />
+    </div>
+
+    <div id="snow_flake">
+        <img src="./assets/images/snowflake.png" alt="" />
+    </div>
 
     <script src="./app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -171,7 +186,7 @@
     <script>
         $(window).load(function () {
             // Animate loader off screen
-            $(".se-pre-con").fadeOut("slow");
+            $(".se-pre-con").slideUp('slow')
         });
     </script>
 

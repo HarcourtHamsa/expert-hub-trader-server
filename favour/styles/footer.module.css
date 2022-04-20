@@ -59,14 +59,15 @@ footer [class=container] [class=grid] [class=contact_form] form textarea {
 }
 
 footer [class=container] [class=grid] [class=contact_form] form button {
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
+  border-radius: 0.25rem;
   margin-top: 1rem;
-  border-radius: 50px;
   border: 0;
-  background-color: black;
+  background-color: #413ea2;
   color: white;
   font-size: 1rem;
-  border-radius: 0.25rem;
+  -webkit-box-shadow: 5px 2px 5px 2px rgba(60, 64, 67, 0.15);
+          box-shadow: 5px 2px 5px 2px rgba(60, 64, 67, 0.15);
 }
 
 footer [class=container] [class=grid] [class=contact_form] form button:hover {

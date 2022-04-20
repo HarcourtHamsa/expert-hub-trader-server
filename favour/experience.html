@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/navigation.module.css">
     <link rel="stylesheet" href="./styles/experience.module.css">
     <link rel="stylesheet" href="./styles/footer.module.css">
+    <link rel="stylesheet" href="./styles/loader.module.css">
+    <link rel="stylesheet" href="./styles/main.modules.css">
     <title>Favour Princewill Portfolio</title>
 </head>
 
@@ -39,9 +41,9 @@
     <main id="experience">
         <div class="container">
             <h2>Skills & Experience</h2>
-            <p class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aut!
+            <!-- <p class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aut!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aut!
-            </p>
+            </p> -->
             <div class="grid">
                 <div>
                     <section>
@@ -85,12 +87,12 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <!-- <footer>
         <div class="container">
-            <div class="grid">
+            <div class="grid"> -->
 
                 <!-- row 1 -->
-                <div class="contact_form">
+                <!-- <div class="contact_form">
                     <p>Contact Us</p>
                     <h2>Send A Message</h2>
 
@@ -103,20 +105,34 @@
 
                         <button>Send Message</button>
                     </form>
-                </div>
+                </div> -->
 
                 <!-- row 2-->
-                <div class="footer_card">
+                <!-- <div class="footer_card">
 
                 </div>
             </div>
         </div>
-    </footer>
-
-
+    </footer> -->
 
     <!-- loader -->
-    <div class="se-pre-con"></div>
+    <div class="se-pre-con">
+        <div>
+            <h1>Favour Princewill</h1>
+            <span>
+                <p>Digital Normad</p>
+                <p>100%</p>
+            </span>
+        </div>
+    </div>
+
+    <div id="swing">
+        <img src="./assets/images/swing2.svg" alt="" />
+    </div>
+
+    <div id="snow_flake">
+        <img src="./assets/images/snowflake.png" alt="" />
+    </div>
 
     <script src="./app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -124,7 +140,7 @@
     <script>
         $(window).load(function () {
             // Animate loader off screen
-            $(".se-pre-con").fadeOut("slow");
+            $(".se-pre-con").slideUp('slow')
         });
     </script>
 </body>

@@ -112,12 +112,12 @@
     font-size: 3.4rem;
   }
   #what [class=container] [class=grid] {
-    gap: 0;
+    gap: 1rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    -webkit-transform: translateX(-32%);
-            transform: translateX(-32%);
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
   }
   #what [class=container] [class=grid] [class=card] {
     -webkit-transform: scale(0.9);
@@ -125,26 +125,25 @@
     width: 60vw;
   }
   #what [class=container] [class=grid] [class=card]:nth-child(1) {
-    -webkit-transform: translate(0%, 10%) rotate(0deg) scale(0.9);
-            transform: translate(0%, 10%) rotate(0deg) scale(0.9);
+    -webkit-transform: translate(0%, 20%) rotate(-10deg) scale(0.9);
+            transform: translate(0%, 20%) rotate(-10deg) scale(0.9);
   }
   #what [class=container] [class=grid] [class=card]:nth-child(3) {
-    -webkit-transform: rotate(0deg) translate(0%, 10%) scale(0.9);
-            transform: rotate(0deg) translate(0%, 10%) scale(0.9);
+    -webkit-transform: rotate(10deg) translate(0%, 20%) scale(0.9);
+            transform: rotate(10deg) translate(0%, 20%) scale(0.9);
   }
 }
 
 #hero {
   width: 100%;
-  height: 60vh;
-  background: radial-gradient(90deg, rgba(255, 239, 186, 0.3), rgba(228, 255, 250, 0.4) 56.77%, #fdfff5);
+  height: 80vh;
+  background-color: radial-gradient(90deg, rgba(255, 239, 186, 0.3), rgba(228, 255, 250, 0.4) 56.77%, #fdfff5) !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2rem;
 }
 
 #hero [class=container] {
@@ -173,69 +172,20 @@
   position: relative;
 }
 
-#hero [class=container] [class=grid] div:first-child h1::after {
-  content: "";
-  position: absolute;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 45vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background-image: linear-gradient(#fff, #fff), linear-gradient(white, white);
-  background-size: 0% 100%, 100% 100%;
-  background-repeat: no-repeat;
-  background-position: left, right;
-  -webkit-animation: revealer-text 0.8s 0.1s cubic-bezier(0, 0, 0.2, 1) forwards;
-          animation: revealer-text 0.8s 0.1s cubic-bezier(0, 0, 0.2, 1) forwards;
-}
-
-@-webkit-keyframes revealer-text {
-  0% {
-    background-size: 0% 100%, 100% 100%;
-    background-position: left, right;
-  }
-  50% {
-    background-size: 100% 100%, 0% 100%;
-    background-position: left, right;
-  }
-  51% {
-    background-size: 100% 100%, 0% 100%;
-    background-position: right;
-  }
-  100% {
-    background-size: 0% 100%, 0% 100%;
-    background-position: right;
-  }
-}
-
-@keyframes revealer-text {
-  0% {
-    background-size: 0% 100%, 100% 100%;
-    background-position: left, right;
-  }
-  50% {
-    background-size: 100% 100%, 0% 100%;
-    background-position: left, right;
-  }
-  51% {
-    background-size: 100% 100%, 0% 100%;
-    background-position: right;
-  }
-  100% {
-    background-size: 0% 100%, 0% 100%;
-    background-position: right;
-  }
-}
-
 #hero [class=container] [class=grid] div:first-child button {
-  padding: 1rem 2rem;
-  border-radius: 50px;
+  padding: 1rem 3rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
   border: 0;
-  background-color: black;
+  background-color: #413ea2;
   color: white;
   font-size: 1rem;
+  -webkit-box-shadow: 5px 2px 5px 2px rgba(60, 64, 67, 0.15);
+          box-shadow: 5px 2px 5px 2px rgba(60, 64, 67, 0.15);
+}
+
+#hero [class=container] [class=grid] div:first-child button:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
@@ -286,7 +236,6 @@
 
 #projects [class=container] [class=grid] [class=card] {
   height: 300px;
-  background-color: rgba(128, 128, 128, 0.06);
   border-radius: 10px;
   border: 1px solid #ced4da;
 }
@@ -298,6 +247,39 @@
   #projects [class=container] [class=grid] {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+#swing {
+  position: absolute;
+  top: -20%;
+  left: -5%;
+}
+
+@media only screen and (max-width: 800px) {
+  #swing {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    left: -20%;
+    z-index: -1;
+  }
+}
+
+#snow_flake {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+@media only screen and (max-width: 800px) {
+  #snow_flake {
+    top: 80%;
+    right: 5%;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=main.modules.css.map */
